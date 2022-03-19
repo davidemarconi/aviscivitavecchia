@@ -3,7 +3,6 @@ body{
 }
 
 header {
-background-color: lightgray;
 height:40px;
 padding : 3px 0 3px 15px;
 }
@@ -19,10 +18,35 @@ padding : 3px 0 3px 15px;
 #navigation li {
     margin-right: 15px;
 }
-.banner>h1{
+.banner{
   text-align: center;
 }
 .banner>button {
-    margin:0 auto
+    margin:0 auto;
     display: block;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    border: none;
 }
+h1 {
+    color: blue;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.grid-item {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+.grid-item:hover{
+    transform: translateX(-100%);
+}
+
